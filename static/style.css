@@ -2,6 +2,54 @@ body {
     text-align: center;
 }
 
-.button {
+ .button {
     display: block;
+    width: 70px;
+    height: 25px;
+    background: grey;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+button {
+    display: block;
+    width: 70px;
+    height: 30px;
+    background: green;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.button_1 {
+    display: block;
+    width: 70px;
+    height: 40px;
+    background: royalblue;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.button_2 {
+    display: block;
+    width: 70px;
+    height: 40px;
+    background: red;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
 }

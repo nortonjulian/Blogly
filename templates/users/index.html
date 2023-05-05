@@ -9,9 +9,9 @@
 </head>
 <body>
     <h1>All Users</h1>
-    <ul>
+    <ul type="none">
         {% for user in users %}
-        <li><a href="/users/{{ user.id }}">{{ user.full_name }}</a></li>
+        <li><a href="/users/{{ user.id }}">{{ user.full_name() }}</a></li>
         {% endfor %}
     </ul>
     <p><a href="/users/new" class="button">Add User</a></p>
