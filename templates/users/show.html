@@ -16,11 +16,13 @@
     <h1>{{ user.full_name }}</h1>
 
     <form action="">
+      <div class="block">
         <button formaction="/users/{{ user.id }}/edit"
         formmethod="GET" class="button_1">Edit</button>
 
         <button formaction="/users/{{ user.id }}/delete"
         formmethod="GET" class="button_2">Delete</button>
+      </div>
     </form>
 </div>
 

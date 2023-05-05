@@ -26,6 +26,7 @@ class User(db.Model):
 
     image_url = db.Column(db.Text, nullable=False)
 
+    @property
     def full_name(self):
         """Full Name of User"""
 

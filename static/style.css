@@ -1,26 +1,15 @@
 body {
     text-align: center;
-}
-
- .button {
-    display: block;
-    width: 70px;
-    height: 25px;
-    background: grey;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    line-height: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 button {
     display: block;
-    width: 70px;
+    width: 80px;
     height: 30px;
     background: green;
-    padding: 10px;
     text-align: center;
     border-radius: 5px;
     color: white;
@@ -28,12 +17,23 @@ button {
     line-height: 25px;
 }
 
+ .button {
+    margin: 2%;
+    width: 80px;
+    background: grey;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+}
+
 .button_1 {
     display: block;
-    width: 70px;
+    width: 80px;
     height: 40px;
     background: royalblue;
-    padding: 10px;
     text-align: center;
     border-radius: 5px;
     color: white;
@@ -43,13 +43,53 @@ button {
 
 .button_2 {
     display: block;
-    width: 70px;
+    width: 80px;
     height: 40px;
     background: red;
-    padding: 10px;
     text-align: center;
     border-radius: 5px;
     color: white;
     font-weight: bold;
     line-height: 25px;
+}
+
+.block {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: inline-block;
+}
+
+.save {
+    display: block;
+    width: 80px;
+    height: 30px;
+    background: green;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.button_3 {
+    display: block;
+    width: 80px;
+    height: 23px;
+    background-color: transparent;
+    border: solid green;
+    text-align: center;
+    border-radius: 5px;
+    color: green;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none
+}
+
+.edit {
+    display: inline-block;
+    display: flex;
 }

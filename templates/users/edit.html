@@ -9,25 +9,26 @@
 <form method="POST">
     <div>
         <label for="first_name">First Name</label>
-    <input type="text" name="first_name" placeholder="Enter a first name" value="{{ user.first_name }}">
+        <input type="text" name="first_name" placeholder="Enter a first name" value="{{ user.first_name }}">
     </div>
 
     <div>
         <label for="last_name">Last Name</label>
-    <input type="text" name="last_name" placeholder="Enter a last name" value="{{ user.last_name }}">
+        <input type="text" name="last_name" placeholder="Enter a last name" value="{{ user.last_name }}">
     </div>
 
     <div>
-        <label for="first_name">First Name</label>
-    <input type="image" name="image_url" placeholder="Upload an image" value="{{ user.image_url }}">
+        <label for="image_url">Image URL</label>
+        <input type="text" name="image_url" placeholder="Upload an image" value="{{ user.image_url }}">
     </div>
-    <button type="Submit">Add</button>
-
-    <div>
-        <a href="/users">Cancel</a>
-        <button type="Submit">Save</button>
+    <div class="edit">
+        <div class="button_3">
+            <a href="/users">Cancel</a>
+        </div>
+        <div class="save">
+            <button type="Submit">Save</button>
+        </div>
     </div>
-
 </form>
 
 {% endblock %}
