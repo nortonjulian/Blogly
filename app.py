@@ -90,7 +90,7 @@ def delete_user(user_id):
 def posts_new(user_id):
 
     user = User.query.get_or_404(user_id)
-    return redirect('posts/show.html', user=user)
+    return render_template('posts/show.html', user=user)
 
 @app.route('/users/<int:user_id>/posts/new', methods=['POST'])
 def posts_new_form(user_id):
@@ -125,7 +125,7 @@ def posts_edit_form(post_id):
     db.session.commit()
     flash(f"'{post.title}' edited!")
 
-    return redirect(f'/users/{post.user_id}')
+    return redirect(f'/users/{post.post_id}')
 
 @app.route('/posts/<int:post_id>/delete', methods=['POST'])
 def delete_post(post_id):
