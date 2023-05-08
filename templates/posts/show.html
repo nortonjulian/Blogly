@@ -7,15 +7,16 @@
 <p>{{ post.content }}</p>
 <p>By {{ post.user.full_name }}</p>
 <form action="">
-    <button formaction="/users/{{ post.user_id }}"
-    formmethod="GET" class="button_2">Cancel</button>
+    <div class="edit">
+        <button formaction="/users/{{ post.user_id }}"
+        formmethod="GET" class="button_4">Cancel</button>
 
-    <button formaction="/posts/{{ post.id }}/edit"
-    formmethod="GET" class="button_1">Edit</button>
+        <button formaction="/posts/{{ post.id }}/edit"
+        formmethod="GET" class="button_1">Edit</button>
 
-    <button formaction="/posts/{{ post.id }}/delete"
-    formmethod="POST" class="button_2">Delete</button>
-
+        <button formaction="/posts/{{ post.id }}/delete"
+        formmethod="POST" class="button_2">Delete</button>
+    </div>
 </form>
 
 {% endblock %}

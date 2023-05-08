@@ -28,11 +28,13 @@
     <h2>Posts</h2>
     {% for post in user.posts %}
       <li>
-        <a href="/posts/{{ post.id }}">{{ post.title }}</a>
+          <a href="/posts/{{ post.id }}">{{ post.title }}</a>
       </li>
     {% endfor %}
 
-    <a href="/users/{{ user.id }}/posts/new">Add Post</a>
+    <div class="add_post">
+      <a href="/users/{{ user.id }}/posts/new">Add Post</a>
+    </div>
 </div>
 
 {% endblock %}

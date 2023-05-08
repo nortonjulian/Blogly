@@ -25,6 +25,7 @@ class User(db.Model):
                            )
 
     image_url = db.Column(db.Text, nullable=False)
+    posts = db.relationship("Post", backref="user", cascade="all, delete-orphan")
 
     @property
     def full_name(self):

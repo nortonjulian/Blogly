@@ -14,9 +14,14 @@
         <textarea name="content" id="content" cols="20" rows="10"></textarea>
     </div>
 
-    <a href="/users/{{ post.user_id }}">Cancel</a>
-    <button>Edit</button>
-
+    <div class="edit">
+        <div class="button_3">
+            <a href="/users/{{ post.user_id }}">Cancel</a>
+        </div>
+        <div>
+            <button>Edit</button>
+        </div>
+    </div>
 </form>
 
 {% endblock %}
