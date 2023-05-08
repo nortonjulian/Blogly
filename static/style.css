@@ -78,7 +78,7 @@ form {
 .button_3 {
     display: block;
     width: 80px;
-    height: 23px;
+    height: 25px;
     background-color: transparent;
     border: solid green;
     text-align: center;
@@ -92,4 +92,9 @@ form {
 .edit {
     display: inline-block;
     display: flex;
+}
+
+img {
+    height: 500px;
+    width: 500px
 }

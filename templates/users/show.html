@@ -24,6 +24,15 @@
         formmethod="GET" class="button_2">Delete</button>
       </div>
     </form>
+
+    <h2>Posts</h2>
+    {% for post in user.posts %}
+      <li>
+        <a href="/posts/{{ post.id }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+
+    <a href="/users/{{ user.id }}">Add Post</a>
 </div>
 
 {% endblock %}

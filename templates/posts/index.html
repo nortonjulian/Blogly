@@ -1,0 +1,12 @@
+{% extends 'users/index.html' %}
+
+
+{% block content %}
+<ul type="none">
+    {% for post in post %}
+    <li><a href="/posts/{{ post.id }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+<p>{{ post.content }}</p>
+
+{% endblock %}
