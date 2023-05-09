@@ -193,7 +193,7 @@ def edit_tag(tag_id):
     post_ids = [int(num) for num in request.form.getlist('posts')]
     tag.posts = Post.query.filter(Post.id.in_(post_ids)).all()
 
-    db.session.add()
+    db.session.add(tag)
     db.session.commit()
     flash(f"Tag '{tag.name} edited!'")
 
