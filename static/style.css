@@ -38,7 +38,8 @@ button {
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    line-height: 25px;
+    line-height: 35px;
+    text-decoration: none;
 }
 
 .button_2 {
@@ -78,7 +79,7 @@ form {
 .button_3 {
     display: block;
     width: 80px;
-    height: 33px;
+    height: 36px;
     background-color: transparent;
     border: solid green;
     text-align: center;
@@ -131,4 +132,51 @@ img {
 
 .margin {
     margin: 5%
+}
+
+.posts {
+    display: inline-block;
+    display: flex;
+    margin-top: 5%;
+}
+
+.post_1 {
+    background-color: teal;
+    color: white;
+    width: 80px;
+    height: 40px;
+    line-height: 36px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.post_2 {
+    display: block;
+    width: 80px;
+    height: 40px;
+    background: green;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.add_tag {
+    display: inline-block;
+    display: flex;
+    margin-top: 5%;
+}
+
+.tag_1 {
+    display: block;
+    width: 80px;
+    height: 37px;
+    background-color: transparent;
+    border: solid blue;
+    text-align: center;
+    border-radius: 5px;
+    color: blue;
+    font-weight: bold;
+    line-height: 25px;
 }
