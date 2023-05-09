@@ -197,7 +197,7 @@ def edit_tag(tag_id):
     db.session.commit()
     flash(f"Tag '{tag.name} edited!'")
 
-    return render_template('/tags')
+    return redirect('/tags')
 
 @app.route('/tags/<int:tag_id>/delete', methods=['POST'])
 def delete_tag(tag_id):
