@@ -93,7 +93,8 @@ def delete_user(user_id):
 def posts_new(user_id):
 
     user = User.query.get_or_404(user_id)
-    return render_template('posts/new.html', user=user)
+    tags = Tag.query.all()
+    return render_template('posts/new.html', user=user, tags=tags)
 
 @app.route('/users/<int:user_id>/posts/new', methods=['POST'])
 def posts_new_form(user_id):
@@ -115,7 +116,8 @@ def posts_id(post_id):
 def posts_edit(post_id):
 
     post = Post.query.get_or_404(post_id)
-    return render_template(f'/posts/edit.html', post=post)
+    tags = Tag.query.all()
+    return render_template(f'/posts/edit.html', post=post, tags=tags)
 
 @app.route('/posts/<int:post_id>/edit', methods=['POST'])
 def posts_edit_form(post_id):
