@@ -19,7 +19,18 @@ debug = DebugToolbarExtension(app)
 connect_db(app)
 db.create_all()
 
+@app.route('/')
+def root():
+    """List of all posts"""
 
+    return render_template("posts/show.html")
+
+@app.errorhandler(404)
+def page_not_found():
+    """Show 404 Not Found page"""
+    return render_template('404.html'), 404
+
+#####Users
 @app.route('/')
 def homepage():
     """Redirect to list of all users"""
